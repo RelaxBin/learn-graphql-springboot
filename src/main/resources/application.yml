@@ -8,7 +8,7 @@ server:
 
 graphql:
   servlet:
-    maxQueryDepth: 5
+    maxQueryDepth: 64 # 改成64，否则voyager不work
   playground:
 #    enabled: false
     headers:
@@ -17,3 +17,6 @@ graphql:
       - name: Bank Account Sample Query
         query: classpath:playground/bank_account.graphql
         variables: classpath:playground/bank_account_variables.json
+
+#voyager:
+#  enabled: false

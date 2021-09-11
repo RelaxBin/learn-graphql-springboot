@@ -35,6 +35,13 @@
       <version>${graphql.version}</version>
       <scope>runtime</scope>
     </dependency>
+    <!-- to embed Voyager tool -->
+    <dependency>
+      <groupId>com.graphql-java-kickstart</groupId>
+      <artifactId>voyager-spring-boot-starter</artifactId>
+      <version>${graphql.version}</version>
+      <scope>runtime</scope>
+    </dependency>
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
