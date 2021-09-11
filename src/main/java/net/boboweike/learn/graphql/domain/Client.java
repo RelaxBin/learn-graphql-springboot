@@ -14,5 +14,4 @@ public class Client {
     String firstName;
     List<String> middleNames = new ArrayList<>();
     String lastName;
-    Client client;
 }

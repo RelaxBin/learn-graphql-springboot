@@ -9,3 +9,11 @@ server:
 graphql:
   servlet:
     maxQueryDepth: 5
+  playground:
+#    enabled: false
+    headers:
+      Authorization: Bearer TOKEN_XYZ
+    tabs:
+      - name: Bank Account Sample Query
+        query: classpath:playground/bank_account.graphql
+        variables: classpath:playground/bank_account_variables.json
