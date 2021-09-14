@@ -8,7 +8,7 @@ server:
 
 graphql:
   servlet:
-    maxQueryDepth: 64 # 改成64，否则voyager不work
+    maxQueryDepth: 64 # 暂改成64，否则voyager不work
   playground:
 #    enabled: false
     headers:

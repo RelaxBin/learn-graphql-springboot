@@ -3,7 +3,6 @@ package net.boboweike.learn.graphql.resolver;
 import graphql.kickstart.tools.GraphQLQueryResolver;
 import lombok.extern.slf4j.Slf4j;
 import net.boboweike.learn.graphql.domain.BankAccount;
-import net.boboweike.learn.graphql.domain.Client;
 import net.boboweike.learn.graphql.domain.Currency;
 import org.springframework.stereotype.Component;
 
@@ -15,16 +14,9 @@ public class BankAccountResolver implements GraphQLQueryResolver {
     public BankAccount bankAccount(UUID id) {
         log.info("Retrieving bank account, id {}", id);
 
-        var clientA = Client.builder()
-                .id(UUID.randomUUID())
-                .firstName("William")
-                .lastName("Bobo1")
-                .build();
-
         return BankAccount.builder()
                 .id(id)
                 .currency(Currency.RMB)
-                .client(clientA)
                 .build();
     }
 }

@@ -12,6 +12,5 @@ import java.util.UUID;
 public class Client {
     UUID id;
     String firstName;
-    List<String> middleNames = new ArrayList<>();
     String lastName;
 }
