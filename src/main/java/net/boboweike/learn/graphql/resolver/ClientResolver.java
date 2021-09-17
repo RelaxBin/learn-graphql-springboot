@@ -1,5 +1,6 @@
 package net.boboweike.learn.graphql.resolver;
 
+import graphql.GraphQLException;
 import graphql.kickstart.tools.GraphQLResolver;
 import lombok.extern.slf4j.Slf4j;
 import net.boboweike.learn.graphql.domain.BankAccount;
@@ -14,10 +15,12 @@ public class ClientResolver implements GraphQLResolver<BankAccount> {
     public Client client(BankAccount bankAccount) {
         log.info("Retrieving client data for bank account {}", bankAccount.getId());
 
-        return Client.builder()
-                .id(UUID.randomUUID())
-                .firstName("William")
-                .lastName("Bobo1")
-                .build();
+        throw new GraphQLException("Spring exception, can't connect to DB: (sql select *)");
+
+//        return Client.builder()
+//                .id(UUID.randomUUID())
+//                .firstName("William")
+//                .lastName("Bobo1")
+//                .build();
     }
 }
