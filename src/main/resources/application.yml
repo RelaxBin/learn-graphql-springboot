@@ -9,7 +9,7 @@ server:
 graphql:
   servlet:
     maxQueryDepth: 64 # 暂改成64，否则voyager不work
-    exception-handlers-enabled: true
+    exception-handlers-enabled: false
   playground:
 #    enabled: false
     headers:
