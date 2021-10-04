@@ -1,6 +1,9 @@
 spring:
   application:
     name: learn-graphql-springboot
+  servlet:
+    multipart:
+      max-file-size: 4MB
 
 server:
   http2:
