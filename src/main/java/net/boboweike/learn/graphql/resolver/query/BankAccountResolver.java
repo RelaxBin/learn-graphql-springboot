@@ -1,4 +1,4 @@
-package net.boboweike.learn.graphql.resolver;
+package net.boboweike.learn.graphql.resolver.query;
 
 import graphql.kickstart.tools.GraphQLQueryResolver;
 import lombok.extern.slf4j.Slf4j;
