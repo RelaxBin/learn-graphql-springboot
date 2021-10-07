@@ -1,6 +1,7 @@
 package net.boboweike.learn.graphql.resolver.query;
 
 import graphql.kickstart.tools.GraphQLQueryResolver;
+import graphql.schema.DataFetchingEnvironment;
 import lombok.extern.slf4j.Slf4j;
 import net.boboweike.learn.graphql.domain.BankAccount;
 import net.boboweike.learn.graphql.domain.Currency;
